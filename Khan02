@@ -1,0 +1,19 @@
+* What does the app's SQL look like? */
+
+CREATE TABLE my_diary (id INTEGER PRIMARY KEY, date TEXT, entry TEXT);
+
+INSERT INTO my_diary VALUES (1, "1 October 2022" , "Today was a horrible day. I lost my dog and I also failed a test.");
+
+INSERT INTO my_diary VALUES (2, "4 October 2022" , "I finally found my dog! I am so happy.");
+
+INSERT INTO my_diary VALUES (3, "10 October 2022" , "I got into a huge fight with my sister. I really hate her.");
+
+SELECT * FROM my_diary;
+
+UPDATE my_diary SET entry = "I got into a huge fight with my sister" WHERE id=3;
+
+SELECT * FROM my_diary;
+
+DELETE FROM my_diary WHERE id=1;
+
+SELECT * FROM my_diary;
